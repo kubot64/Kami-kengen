@@ -102,7 +102,7 @@
       var next = readPrayers() + 1;
       writePrayers(next);
       render(next);
-      if (live) live.textContent = formatCount(next) + "回、祈りました。";
+      if (live) live.textContent = formatCount(next) + "回祈りました。";
       burstFrom(button);
       if (slot && !reduce) {
         slot.classList.remove("is-blessed");
