@@ -4,9 +4,23 @@
 
 **公式サイトではありません。** 公式アカウント、原作者、出版社、そのほか権利者とは無関係です。なりすましでも、制作依頼を受けた仕事でもありません。
 
-## Cloudflare Pages
+## 公開（GitHub Pages）
 
-ビルドは不要です。リポジトリ直下の `index.html` を、そのまま配信します。
+いまの公開先は GitHub Pages です。
+
+https://kubot64.github.io/Kami-kengen/
+
+| 項目 | 値 |
+| --- | --- |
+| Source | Deploy from a branch |
+| Branch | `main` |
+| Folder | `/`（root） |
+
+ビルドは不要です。`main` のリポジトリ直下にある `index.html` が、そのまま公開されます。GitHub の Settings → Pages で、上の表のとおりブランチ `main` とフォルダ `/ (root)` を選んでください。
+
+## Cloudflare Pages（別の置き場所）
+
+同じファイルを Cloudflare Pages でも配信できます。ビルドは同じく不要です。
 
 | 項目 | 値 |
 | --- | --- |
@@ -23,7 +37,7 @@
 3. 上の表のとおり、ビルドコマンドを空にし、出力ディレクトリを `/` にする。
 4. 保存してデプロイする。
 
-Node のバージョン指定も、インストールも要りません。空のビルドコマンドにすると、Pages はビルドをスキップして、出力ディレクトリのファイルを公開します。
+Node のバージョン指定も、インストールも要りません。空のビルドコマンドにすると、Pages はビルドをスキップして、出力ディレクトリのファイルを公開します。公開先のドメインを変えたときは、下の OGP と投稿ボタンの URL も合わせてください。
 
 ## ファイル
 
@@ -57,17 +71,15 @@ python3 -m http.server 4173
 
 公式のアニメ・漫画の画像、スクリーンショット、公式グッズの写真は置かないでください。自分で描いた絵か、使う許可のある絵だけにしてください。
 
-## OGP
+## OGP と投稿リンク
 
-`index.html` の `og:image` と `twitter:image` は `assets/og.png`（1200×630）を指しています。同じパスのファイルを差し替えれば絵が変わります。
+カード用の画像ファイルは `assets/og.png`（1200×630）です。X や LINE は相対パスをカードにしないので、`og:image` と `twitter:image` は絶対 URL を指しています。
 
-X や Facebook は絶対 URL を要求することがあります。公開ドメインが決まったら、次を本番の URL に書き換えてください。
+https://kubot64.github.io/Kami-kengen/assets/og.png
 
-```html
-<meta property="og:url" content="https://あなたのドメイン/">
-<meta property="og:image" content="https://あなたのドメイン/assets/og.png">
-<meta name="twitter:image" content="https://あなたのドメイン/assets/og.png">
-```
+ページ自身の URL は `og:url` と canonical で `https://kubot64.github.io/Kami-kengen/` です。投稿ボタンも、この URL を添えた文面で開きます。
+
+画像を差し替えるときは `assets/og.png` を同じサイズで置き換えてください。公開先のドメインを変えるときは、`index.html` の `og:url`、`og:image`、`twitter:image`、canonical、投稿ボタンの `data-url` を新しい URL に合わせてください。投稿文は `data-text` です。載せる URL は `data-url` で、それが無いときは開いているページの URL を使います。
 
 ## フォント
 

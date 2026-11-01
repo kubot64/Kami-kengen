@@ -116,9 +116,11 @@
       var intent = new URL("https://x.com/intent/post");
       intent.searchParams.set("text", share.dataset.text);
       intent.searchParams.set("hashtags", share.dataset.hashtags || "神顕現計画");
-      if (location.protocol === "http:" || location.protocol === "https:") {
-        intent.searchParams.set("url", location.href.split("#")[0]);
+      var pageUrl = share.dataset.url;
+      if (!pageUrl && (location.protocol === "http:" || location.protocol === "https:")) {
+        pageUrl = location.href.split("#")[0];
       }
+      if (pageUrl) intent.searchParams.set("url", pageUrl);
       share.href = intent.toString();
     }
 
