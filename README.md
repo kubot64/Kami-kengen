@@ -79,7 +79,7 @@ https://kubot64.github.io/Kami-kengen/assets/og.png
 
 ページ自身の URL は `og:url` と canonical で `https://kubot64.github.io/Kami-kengen/` です。投稿ボタンも、この URL を添えた文面で開きます。
 
-画像を差し替えるときは `assets/og.png` を同じサイズで置き換えてください。公開先のドメインを変えるときは、`index.html` の `og:url`、`og:image`、`twitter:image`、canonical、それに投稿ボタンの `data-url` を新しい URL に合わせてください。
+画像を差し替えるときは `assets/og.png` を同じサイズで置き換えてください。公開先のドメインを変えるときは、`index.html` の `og:url`、`og:image`、`twitter:image`、canonical、投稿ボタンの `data-url` を新しい URL に合わせてください。投稿文は `data-text` です。載せる URL は `data-url` で、それが無いときは開いているページの URL を使います。
 
 ## フォント
 
