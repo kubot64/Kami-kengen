@@ -6,20 +6,16 @@
   function initFigure() {
     var photo = document.querySelector(".hato-photo");
     if (!photo) return;
-    var src = photo.getAttribute("data-src");
-    if (!src) return;
 
     function show() {
       if (photo.naturalWidth > 0) root.classList.add("has-photo");
     }
 
-    fetch(src, { method: "HEAD" }).then(function (res) {
-      if (!res.ok) return;
-      photo.addEventListener("load", show, { once: true });
-      photo.src = src;
-    }).catch(function () {
-      /* ファイルが無いあいだは、象徴図のまま */
-    });
+    if (photo.complete) {
+      show();
+      return;
+    }
+    photo.addEventListener("load", show, { once: true });
   }
 
   function initReveal() {
