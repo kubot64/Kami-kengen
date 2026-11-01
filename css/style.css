@@ -14,7 +14,6 @@
   --line: rgba(243, 212, 138, 0.28);
   --serif: "Shippori Mincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Noto Serif CJK JP", serif;
   --sans: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", sans-serif;
-  --topbar: 4.6rem;
 }
 
 @font-face {
@@ -1255,8 +1254,6 @@ h2 {
 }
 
 @media (min-width: 960px) {
-  :root { --topbar: 3.6rem; }
-
   .hero {
     background:
       radial-gradient(ellipse at 70% 42%, #4a2038 0%, rgba(74, 32, 56, 0) 36%),
