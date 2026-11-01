@@ -6,16 +6,20 @@
   function initFigure() {
     var photo = document.querySelector(".hato-photo");
     if (!photo) return;
+    var src = photo.getAttribute("data-src");
+    if (!src) return;
 
     function show() {
       if (photo.naturalWidth > 0) root.classList.add("has-photo");
     }
 
-    if (photo.complete) {
-      show();
-      return;
-    }
-    photo.addEventListener("load", show, { once: true });
+    fetch(src, { method: "HEAD" }).then(function (res) {
+      if (!res.ok) return;
+      photo.addEventListener("load", show, { once: true });
+      photo.src = src;
+    }).catch(function () {
+      /* ファイルが無いあいだは、象徴図のまま */
+    });
   }
 
   function initReveal() {
@@ -35,13 +39,15 @@
   }
 
   function readPrayers() {
+    var stored = 0;
     try {
       var n = Number(localStorage.getItem(PRAY_KEY));
-      if (Number.isFinite(n) && n > 0) return Math.floor(n);
+      if (Number.isFinite(n) && n > 0) stored = Math.floor(n);
     } catch (err) {
-      return readPrayers.memory || 0;
+      stored = 0;
     }
-    return readPrayers.memory || 0;
+    var memory = readPrayers.memory || 0;
+    return memory > stored ? memory : stored;
   }
 
   function writePrayers(n) {
