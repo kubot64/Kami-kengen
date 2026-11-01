@@ -116,9 +116,7 @@
       var intent = new URL("https://x.com/intent/post");
       intent.searchParams.set("text", share.dataset.text);
       intent.searchParams.set("hashtags", share.dataset.hashtags || "神顕現計画");
-      if (location.protocol === "http:" || location.protocol === "https:") {
-        intent.searchParams.set("url", location.href.split("#")[0]);
-      }
+      intent.searchParams.set("url", share.dataset.url || "https://kubot64.github.io/Kami-kengen/");
       share.href = intent.toString();
     }
 
