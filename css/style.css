@@ -673,6 +673,10 @@ h2 {
   letter-spacing: 0.08em;
 }
 
+.keep {
+  white-space: nowrap;
+}
+
 .paths {
   list-style: none;
   margin: 1rem 0 0;
