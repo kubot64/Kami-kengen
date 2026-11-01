@@ -35,13 +35,15 @@
   }
 
   function readPrayers() {
+    var stored = 0;
     try {
       var n = Number(localStorage.getItem(PRAY_KEY));
-      if (Number.isFinite(n) && n > 0) return Math.floor(n);
+      if (Number.isFinite(n) && n > 0) stored = Math.floor(n);
     } catch (err) {
-      return readPrayers.memory || 0;
+      stored = 0;
     }
-    return readPrayers.memory || 0;
+    var memory = readPrayers.memory || 0;
+    return memory > stored ? memory : stored;
   }
 
   function writePrayers(n) {
