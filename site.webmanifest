@@ -1,0 +1,17 @@
+{
+  "name": "神顕現計画（非公式）",
+  "short_name": "神顕現計画",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0c0610",
+  "theme_color": "#120814",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "assets/emblem.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

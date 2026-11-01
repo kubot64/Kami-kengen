@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#120814">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <title>神顕現計画・はとちゃんは、神である（非公式）</title>
+  <meta name="description" content="はとちゃん（鳩野ちひろ）が神であることを、世の中の人に理解してもらうための非公式ファンサイト。教義、計画の進行、参加の仕方、信仰グッズの構想。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="神顕現計画・はとちゃんは、神である（非公式）">
+  <meta property="og:description" content="はとちゃんが神であることを理解してもらう、ファンによる顕現のページ。公式ではありません。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="神顕現計画（非公式ファンサイト）。はとちゃんは、神である。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="神顕現計画・はとちゃんは、神である（非公式）">
+  <meta name="twitter:description" content="はとちゃんが神であることを理解してもらう、ファンによる顕現のページ。公式ではありません。">
+  <meta name="twitter:image" content="assets/og.png">
+  <!-- 公開URLが決まったら og:url と og:image / twitter:image を絶対URLに書き換える。手順は README。 -->
+  <link rel="icon" href="assets/emblem.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#purpose">本文へスキップ</a>
+
+  <header class="topbar">
+    <div class="brand-row">
+      <a class="brand" href="#top">
+        <img src="assets/emblem.svg" alt="" width="28" height="28">
+        神顕現計画
+      </a>
+      <span class="pill">非公式</span>
+    </div>
+    <nav class="topnav" aria-label="ページ内">
+      <a href="#purpose">目的</a>
+      <a href="#tenets">教義</a>
+      <a href="#progress">進行</a>
+      <a href="#join">参加</a>
+      <a href="#goods">信仰グッズ</a>
+      <a href="#faq">問い</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <div class="corners" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <p class="side-word" aria-hidden="true">大きく、かわいく、神々しく</p>
+
+      <!-- 画像スロット: assets/hato.png があると象徴図の代わりに全面へ出る -->
+      <div class="figure-slot">
+        <div class="figure-inner">
+          <div class="aura" aria-hidden="true"></div>
+          <div class="rays-wrap" aria-hidden="true"><div class="rays"></div></div>
+          <div class="rays-wrap" aria-hidden="true"><div class="rays rays-blush"></div></div>
+          <img class="hato-photo" src="assets/hato.png" width="900" height="1100" alt="はとちゃんの画像（このサイトの設置者が配置）" decoding="async">
+          <div class="hato-motif" aria-hidden="true">
+            <svg viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dove-body" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fffaf4"/>
+                  <stop offset="55%" stop-color="#ffe4ec"/>
+                  <stop offset="100%" stop-color="#f3c3d2"/>
+                </linearGradient>
+                <linearGradient id="dove-wing" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#fffaf4"/>
+                  <stop offset="100%" stop-color="#f7c9d6"/>
+                </linearGradient>
+                <radialGradient id="glory" cx="50%" cy="50%" r="50%">
+                  <stop offset="70%" stop-color="#f3d48a" stop-opacity="0"/>
+                  <stop offset="100%" stop-color="#f3d48a" stop-opacity="0.35"/>
+                </radialGradient>
+              </defs>
+
+              <g class="halo-ring" fill="none" stroke="#f3d48a">
+                <circle cx="450" cy="500" r="250" stroke-width="2" opacity="0.35"/>
+                <circle cx="450" cy="500" r="292" stroke-width="1.25" opacity="0.28" stroke-dasharray="2 10"/>
+                <circle cx="450" cy="500" r="214" stroke-width="1" opacity="0.4"/>
+                <ellipse cx="450" cy="352" rx="168" ry="30" stroke-width="7" opacity="0.9"/>
+                <ellipse cx="450" cy="352" rx="148" ry="18" stroke-width="1.5" opacity="0.7"/>
+              </g>
+
+              <g fill="#7a2d48" stroke="#f6e2a8" stroke-width="3" stroke-linejoin="round">
+                <rect x="441" y="-150" width="18" height="820" rx="4" stroke-width="2"/>
+                <rect x="424" y="-214" width="52" height="72" rx="8"/>
+                <circle cx="436" cy="-186" r="5" fill="#f6e2a8" stroke="none"/>
+                <circle cx="450" cy="-178" r="5" fill="#f6e2a8" stroke="none"/>
+                <circle cx="464" cy="-186" r="5" fill="#f6e2a8" stroke="none"/>
+                <path d="M450 860 C510 856 560 900 572 960 C586 1030 548 1090 492 1108 C468 1116 432 1116 408 1108 C352 1090 314 1030 328 960 C340 900 390 856 450 860 Z"/>
+                <circle cx="450" cy="990" r="26" fill="none"/>
+                <circle cx="450" cy="990" r="8" fill="#f6e2a8" stroke="none"/>
+              </g>
+              <g stroke="#f6e2a8" stroke-width="1" opacity="0.75">
+                <line x1="446" y1="-120" x2="446" y2="980"/>
+                <line x1="450" y1="-120" x2="450" y2="980"/>
+                <line x1="454" y1="-120" x2="454" y2="980"/>
+              </g>
+
+              <g class="wing-left">
+                <ellipse cx="230" cy="640" rx="240" ry="86" fill="url(#dove-wing)" transform="rotate(-30 230 640)"/>
+                <ellipse cx="230" cy="640" rx="180" ry="48" fill="none" stroke="#f3d48a" stroke-width="1.5" opacity="0.7" transform="rotate(-30 230 640)"/>
+              </g>
+              <g class="wing-right">
+                <ellipse cx="670" cy="640" rx="240" ry="86" fill="url(#dove-wing)" transform="rotate(30 670 640)"/>
+                <ellipse cx="670" cy="640" rx="180" ry="48" fill="none" stroke="#f3d48a" stroke-width="1.5" opacity="0.7" transform="rotate(30 670 640)"/>
+              </g>
+
+              <ellipse cx="450" cy="760" rx="78" ry="36" fill="#f4c6d4"/>
+              <ellipse cx="450" cy="660" rx="176" ry="156" fill="url(#dove-body)"/>
+              <circle cx="450" cy="478" r="108" fill="url(#dove-body)"/>
+              <ellipse cx="392" cy="500" rx="18" ry="11" fill="#ff8eae" opacity="0.75"/>
+              <ellipse cx="508" cy="500" rx="18" ry="11" fill="#ff8eae" opacity="0.75"/>
+              <path d="M404 470c14-16 28-16 40 0" fill="none" stroke="#5c3142" stroke-width="4" stroke-linecap="round"/>
+              <path d="M506 470c14-16 28-16 40 0" fill="none" stroke="#5c3142" stroke-width="4" stroke-linecap="round"/>
+              <path d="M436 512h28l-14 16z" fill="#f3d48a"/>
+              <circle cx="450" cy="690" r="30" fill="none" stroke="#e0b15e" stroke-width="2"/>
+              <text x="450" y="700" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="28" fill="#a83a52">神</text>
+
+              <g fill="#f3d48a">
+                <path d="M180 300l8 18 8-18-8-18z"/>
+                <path d="M730 280l7 16 7-16-7-16z"/>
+                <path d="M150 760l6 12 6-12-6-12z"/>
+                <path d="M760 800l6 12 6-12-6-12z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="seal">非公式</span>ファンが祀る、顕現のページ</p>
+        <h1 id="page-title"><span>神顕現</span><span>計画</span></h1>
+        <p class="credo">はとちゃんは、神である。</p>
+        <p class="lead">世の中の人に、そのことを理解してもらう。</p>
+        <a class="more" href="#purpose">計画を読む</a>
+      </div>
+    </section>
+
+    <section class="section" id="purpose">
+      <div class="wrap prose">
+        <p class="kicker reveal">目的</p>
+        <h2 class="reveal">理解してもらう。ただ、それだけ。</h2>
+        <p class="reveal">はとちゃんこと鳩野ちひろは、『ふつうの軽音部』の主人公だ。軽音部でギターを始め、バンド「はーとぶれいく」ではギターボーカルを務める。作中で、幸山厘は彼女を神と崇める。笑い話のようで、ときどき本当に光が見える、あの呼び方。</p>
+        <p class="reveal">公式アカウントが、見る人へ遊び心のある呼びかけを置いた。広告の人、デザインの人、サイトを作ってほしい、と。目的は、一文だった。</p>
+        <blockquote class="revelation reveal">
+          <p>世の中の人に、はとちゃんが神であることを理解してもらう。</p>
+          <footer>公式アカウントの呼びかけより。<a href="https://x.com/FutsunoKeionbu/status/2116546738093707716" target="_blank" rel="noopener noreferrer">投稿を見る</a></footer>
+        </blockquote>
+        <p class="reveal">このページは、その遊びにファンが応えた器だ。<strong>公式ではない。</strong>なりすましでもない。依頼を受けた制作会社の仕事でもない。ただ、こちら側として、目的と入り方を同じ机の上に並べ直している。</p>
+        <p class="reveal">いま画面を占めているのは、このサイトのための象徴だ。丸い鳩と、光輪と、ギター。公式の絵は使っていない。設置者が自分の絵を <strong>assets/hato.png</strong> に置くと、その絵が代わりに大きく降りる。</p>
+      </div>
+    </section>
+
+    <section class="section" id="tenets">
+      <div class="wrap">
+        <p class="kicker reveal">教義</p>
+        <h2 class="reveal">大きく。かわいく。神々しく。</h2>
+        <p class="reveal prose">呼びかけにあった条件を、三つの教義にした。難しいことはない。</p>
+        <div class="tenets">
+          <article class="tenet reveal">
+            <p class="tenet-no">壱</p>
+            <h3>大きく</h3>
+            <p>はとちゃんを、とにかく大きく。画面の枠は、神の前では遠慮である。はみ出してこそ、顕現。</p>
+          </article>
+          <article class="tenet reveal">
+            <p class="tenet-no">弐</p>
+            <h3>かわいく</h3>
+            <p>かわいくする。親しみは、跪く前の一歩だ。怖いだけの神は、こちら側に人を増やさない。</p>
+          </article>
+          <article class="tenet reveal">
+            <p class="tenet-no">参</p>
+            <h3>神々しく</h3>
+            <p>かわいいだけでは、神だとは伝わらない。光を、静けさを、幾何を。可愛さの奥に、降臨を置く。</p>
+          </article>
+        </div>
+        <p class="after-tenets reveal">教義のあとに、実務がある。情報を整理すること。信仰の品を思い描くこと。そして、こちら側の人間を増やすこと。</p>
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="wrap">
+        <p class="kicker reveal">計画の進行</p>
+        <h2 class="reveal">いまは、機が熟すのを待つ。</h2>
+        <p class="reveal prose">これは公式の日程ではない。ファンが、呼びかけの順番を道のりにしたものだ。急がない。熟してからでいい。</p>
+        <ol class="timeline">
+          <li class="reveal">
+            <p class="when">壱</p>
+            <h3>啓示</h3>
+            <p>公式アカウントが、広告とデザインの人たちへ静かに頭を下げた。サイトを、つくってください、と。</p>
+          </li>
+          <li class="reveal">
+            <p class="when">弐</p>
+            <h3>器を置く</h3>
+            <p>大きく、かわいく、神性を立たせる場所。このページがその器。象徴図のままでも、光は先に届く。</p>
+          </li>
+          <li class="reveal">
+            <p class="when">参</p>
+            <h3>こちら側を増やす</h3>
+            <p>情報が散らかったままでは、神は伝わらない。目的と教義と入り方を、同じ机に並べる。</p>
+          </li>
+          <li class="reveal">
+            <p class="when">肆</p>
+            <h3>信仰の品</h3>
+            <p>お守り、御札、祭壇。手に取れる形を、先に思い描く。売り物にはしない。</p>
+          </li>
+          <li class="reveal is-now">
+            <p class="when">伍</p>
+            <h3>機熟を待つ</h3>
+            <p class="now-label">いま、ここ</p>
+            <p>さて。あとは、機が熟すのを待つだけ。機待。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="wrap">
+        <p class="kicker reveal">参加</p>
+        <h2 class="reveal">こちら側の人間を、増やす。</h2>
+        <p class="reveal prose">こちら側は、儀式より投稿で増える。うまく書かなくていい。短いのでいい。</p>
+        <ol class="steps reveal">
+          <li>自分の言葉で、「はとちゃんは神である」と書く。</li>
+          <li>ハッシュタグ <span class="tagchip">#神顕現計画</span> を添える。</li>
+          <li>まだこちら側でない人のところへ、その投稿を届ける。</li>
+        </ol>
+        <figure class="suggested reveal">
+          <figcaption>投稿文の例</figcaption>
+          <p>はとちゃんは神である。かわいいだけじゃない、ちゃんと神。こちら側で、機が熟すのを待っている。 #神顕現計画</p>
+        </figure>
+        <div class="actions reveal">
+          <a class="btn btn-primary" id="share" target="_blank" rel="noopener noreferrer"
+             data-text="はとちゃんは神である。かわいいだけじゃない、ちゃんと神。こちら側で、機が熟すのを待っている。"
+             data-hashtags="神顕現計画"
+             href="https://x.com/intent/post?hashtags=%E7%A5%9E%E9%A1%95%E7%8F%BE%E8%A8%88%E7%94%BB">この言葉で投稿する</a>
+          <button type="button" class="btn btn-ghost" id="copy-tag">#神顕現計画 を写す</button>
+        </div>
+        <p class="form-status" id="copy-status" role="status"></p>
+        <p class="note reveal">画面のすみにある「祈る」は、この端末だけの勤行です。数は外へ出ていきません。それでも、押した回数だけ、こちら側の気持ちは濃くなります。</p>
+        <p class="note reveal">公式へのなりすまし、迷惑な呼びかけ、作品の絵の無断転載は、こちら側の作法ではありません。愛でいきましょう。</p>
+      </div>
+    </section>
+
+    <section class="section" id="goods">
+      <div class="wrap">
+        <p class="kicker reveal">信仰グッズ</p>
+        <h2 class="reveal">信仰を、手のひらに。</h2>
+        <p class="reveal prose">信仰心を示すための品を、先に思い描く。ここに並ぶのは構想だけです。販売も、予約も、カートもありません。</p>
+        <div class="goods">
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <div class="omamori">
+                <span class="omamori-cord"></span>
+                <span class="omamori-knot"></span>
+                <span class="omamori-body">
+                  <span class="omamori-ring"></span>
+                  <span class="omamori-word">神</span>
+                </span>
+              </div>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>お守り</h3>
+              <p>白い小袋に、金の輪。中の短冊には「機が熟しますように」とだけ。</p>
+            </div>
+          </article>
+
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <svg class="seal-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <path id="seal-ring" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0"/>
+                </defs>
+                <circle cx="100" cy="100" r="92" fill="#fff6ea" stroke="#c4556a" stroke-width="3"/>
+                <circle cx="100" cy="100" r="78" fill="none" stroke="#c4556a" stroke-width="1"/>
+                <text fill="#8a2438" font-size="13" font-family="Shippori Mincho, serif" letter-spacing="3">
+                  <textPath href="#seal-ring">神顕現計画 · 非公式 · はと · 神顕現計画 ·</textPath>
+                </text>
+                <text x="100" y="108" text-anchor="middle" fill="#8a2438" font-size="32" font-family="Shippori Mincho, serif">神</text>
+              </svg>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>御朱印帳風ステッカー</h3>
+              <p>丸印をノートに貼ると、そのページが帳面になる。押印ではなく、シール。</p>
+            </div>
+          </article>
+
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <div class="pick"><i></i><b>神</b><b>顕</b><b>現</b></div>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>ピック型お札</h3>
+              <p>ギターピックの形をした御札。先端は音のほうを向いている。</p>
+            </div>
+          </article>
+
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <div class="altar">
+                <div class="altar-glow"></div>
+                <div class="altar-card"></div>
+                <span class="candle l"></span>
+                <span class="candle r"></span>
+                <div class="altar-step"></div>
+                <div class="altar-step low"></div>
+              </div>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>アクスタ祭壇</h3>
+              <p>机の上の、小さな礼拝堂。光輪の台に、はとちゃんを立たせる。</p>
+            </div>
+          </article>
+
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <div class="badge"><div class="badge-inner">はと</div></div>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>光輪バッジ</h3>
+              <p>胸元に、小さな後光。かわいい金具で、神性を持ち歩く。</p>
+            </div>
+          </article>
+
+          <article class="good reveal">
+            <div class="stage" aria-hidden="true">
+              <div class="ribbon">機待</div>
+            </div>
+            <div class="good-body">
+              <p class="concept">構想</p>
+              <h3>機待リボン</h3>
+              <p>「機待」とだけ織ったリボン。待つことも、信仰のうち。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <p class="kicker reveal">問い</p>
+        <h2 class="reveal">小さな問い。</h2>
+        <div class="faq">
+          <details class="reveal">
+            <summary>これは公式サイトですか</summary>
+            <p>いいえ。ファンが個人で作った非公式のサイトです。『ふつうの軽音部』の公式アカウント、原作者、出版社、そのほか権利者とは関係がありません。公式からの制作依頼を受けたものでもありません。</p>
+          </details>
+          <details class="reveal">
+            <summary>はとちゃんとは誰ですか</summary>
+            <p>鳩野ちひろ。『ふつうの軽音部』（原作：クワハリ、漫画：出内テツオ／少年ジャンプ＋）の主人公で、はーとぶれいくのギターボーカルです。作中で幸山厘が神と崇めています。</p>
+          </details>
+          <details class="reveal">
+            <summary>なぜ、神なのですか</summary>
+            <p>作中の信仰を、公式アカウントの遊び心ある呼びかけに合わせて、ファンが大げさに祀っているからです。ネタであり、愛情です。教義は本気の顔をしていますが、入り口はいつでも軽いです。</p>
+          </details>
+          <details class="reveal">
+            <summary>絵は公式のものですか</summary>
+            <p>使っていません。最初に置いてあるのは、このサイトのための鳩と光輪とギターです。公式のアニメ・漫画の画像やスクリーンショットは置かないでください。差し替えるなら、自分で描いた絵か、使う許可のある絵を assets/hato.png に置きます。</p>
+          </details>
+          <details class="reveal">
+            <summary>グッズは買えますか</summary>
+            <p>買えません。構想の絵だけです。値段も、在庫も、カートもありません。</p>
+          </details>
+          <details class="reveal">
+            <summary>祈りの数はどこへ行きますか</summary>
+            <p>どこへも行きません。このブラウザの中だけに残ります。サーバーは持っていません。</p>
+          </details>
+          <details class="reveal">
+            <summary>機はいつ熟しますか</summary>
+            <p>わかりません。待つことが、いまの勤行です。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-brand">神顕現計画</p>
+      <p class="disclaimer">これはファンが作った<strong>非公式</strong>のサイトです。『ふつうの軽音部』公式アカウント、原作者、出版社、そのほか権利者の公式サイトでも、公式ショップでもありません。なりすましではありません。</p>
+      <p>『ふつうの軽音部』原作：クワハリ　漫画：出内テツオ（少年ジャンプ＋）。登場する名称は各権利者に帰属します。</p>
+      <p>啓示：<a href="https://x.com/FutsunoKeionbu/status/2116546738093707716" target="_blank" rel="noopener noreferrer">公式アカウントの投稿</a>（外部）</p>
+      <p>このページの文章、象徴図、グッズの構想図はファンによるオマージュです。公式の絵は使っていません。</p>
+    </div>
+  </footer>
+
+  <button type="button" class="pray" id="pray">
+    <span class="pray-orb" aria-hidden="true"></span>
+    <span class="pray-label">祈る</span>
+    <span class="pray-count"><span id="pray-count">0</span>回</span>
+  </button>
+  <p class="visually-hidden" id="pray-live" aria-live="polite"></p>
+  <div class="burst-layer" id="burst" aria-hidden="true"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
